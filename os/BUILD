@@ -19,7 +19,17 @@ constraint_value(
 )
 
 constraint_value(
+    name = "netbsd",
+    constraint_setting = ":os",
+)
+
+constraint_value(
     name = "openbsd",
+    constraint_setting = ":os",
+)
+
+constraint_value(
+    name = "haiku",
     constraint_setting = ":os",
 )
 
@@ -35,6 +45,12 @@ constraint_value(
 
 constraint_value(
     name = "windows",
+    constraint_setting = ":os",
+)
+
+# For the VXworks OS, usefull for embedded systems
+constraint_value(
+    name = "vxworks",
     constraint_setting = ":os",
 )
 
@@ -73,6 +89,11 @@ constraint_value(
 )
 
 constraint_value(
+    name = "visionos",
+    constraint_setting = ":os",
+)
+
+constraint_value(
     name = "qnx",
     constraint_setting = ":os",
 )
@@ -82,5 +103,22 @@ constraint_value(
 # a non-standard (and undefined) location on the filesystem.
 constraint_value(
     name = "nixos",
+    constraint_setting = ":os",
+)
+
+# WASI (WebAssembly System Interface)
+# https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-overview.md
+constraint_value(
+    name = "wasi",
+    constraint_setting = ":os",
+)
+
+constraint_value(
+    name = "fuchsia",
+    constraint_setting = ":os",
+)
+
+constraint_value(
+    name = "chromiumos",
     constraint_setting = ":os",
 )
